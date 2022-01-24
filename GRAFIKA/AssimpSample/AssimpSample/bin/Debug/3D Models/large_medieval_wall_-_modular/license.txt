@@ -1,0 +1,11 @@
+Model Information:
+* title:	Large Medieval Wall - modular
+* source:	https://sketchfab.com/3d-models/large-medieval-wall-modular-60e7830780aa4f10b688861d01dae1cf
+* author:	Andrei.Dragomir (https://sketchfab.com/Andrei.Dragomir)
+
+Model License:
+* license type:	CC-BY-NC-4.0 (http://creativecommons.org/licenses/by-nc/4.0/)
+* requirements:	Author must be credited. No commercial use.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Large Medieval Wall - modular" (https://sketchfab.com/3d-models/large-medieval-wall-modular-60e7830780aa4f10b688861d01dae1cf) by Andrei.Dragomir (https://sketchfab.com/Andrei.Dragomir) licensed under CC-BY-NC-4.0 (http://creativecommons.org/licenses/by-nc/4.0/)

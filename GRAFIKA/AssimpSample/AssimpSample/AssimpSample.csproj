@@ -1,0 +1,231 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{9C5D56EF-B2EC-4843-8506-67E6F0CA3746}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>AssimpSample</RootNamespace>
+    <AssemblyName>AssimpSample</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AssimpNet, Version=3.2.0.0, Culture=neutral, PublicKeyToken=7c35138f0d61254b, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>AssimpLib\AssimpNet.dll</HintPath>
+    </Reference>
+    <Reference Include="SharpGL, Version=2.0.0.0, Culture=neutral, PublicKeyToken=27fc851303210b27, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Dependencies\SharpGL.dll</HintPath>
+    </Reference>
+    <Reference Include="SharpGL.SceneGraph, Version=1.0.0.0, Culture=neutral, PublicKeyToken=27fc851303210b27, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Dependencies\SharpGL.SceneGraph.dll</HintPath>
+    </Reference>
+    <Reference Include="SharpGL.WPF, Version=2.0.0.0, Culture=neutral, PublicKeyToken=27fc851303210b27, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Dependencies\SharpGL.WPF.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Device" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Drawing.Design" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="AssimpScene.cs" />
+    <Compile Include="World.cs" />
+    <Page Include="MainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="3D Models\Arrow\Arrow.obj">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="3D Models\Castle\material.lib" />
+    <None Include="3D Models\Castle\scene.bin" />
+    <None Include="3D Models\Castle\scene.gltf" />
+    <None Include="3D Models\Castle\scene.obj">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="3D Models\large_medieval_wall_-_modular\material.lib" />
+    <None Include="3D Models\large_medieval_wall_-_modular\scene.bin" />
+    <None Include="3D Models\large_medieval_wall_-_modular\scene.gltf" />
+    <None Include="3D Models\large_medieval_wall_-_modular\scene.obj">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="3D Models\ornate_tomb_door\material.lib" />
+    <None Include="3D Models\ornate_tomb_door\scene.bin" />
+    <None Include="3D Models\ornate_tomb_door\scene.gltf" />
+    <None Include="3D Models\ornate_tomb_door\scene.obj">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Dependencies\SharpGL.dll" />
+    <None Include="Dependencies\SharpGL.SceneGraph.dll" />
+    <None Include="Dependencies\SharpGL.WPF.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Textures\metal.jpg" />
+    <Resource Include="Textures\mud.jpg" />
+    <Resource Include="Textures\grass.jpg" />
+    <Resource Include="3D Models\Castle\license.txt" />
+    <Resource Include="3D Models\Castle\textures\arch1_Mat_baseColor.png" />
+    <Resource Include="3D Models\Castle\textures\arch1_Mat_normal.png" />
+    <Resource Include="3D Models\Castle\textures\Arched_Window_Mat_baseColor.png" />
+    <Resource Include="3D Models\Castle\textures\Arched_Window_Mat_normal.png" />
+    <Resource Include="3D Models\Castle\textures\Chapel_Window_Mat_baseColor.png" />
+    <Resource Include="3D Models\Castle\textures\Chapel_Window_Mat_normal.png" />
+    <Resource Include="3D Models\Castle\textures\Concrete036_1K_Color_Mat_baseColor.png" />
+    <Resource Include="3D Models\Castle\textures\Concrete036_1K_Color_Mat_metallicRoughness.png" />
+    <Resource Include="3D Models\Castle\textures\Concrete036_1K_Color_Mat_normal.png" />
+    <Resource Include="3D Models\Castle\textures\concrete1_Mat_baseColor.png" />
+    <Resource Include="3D Models\Castle\textures\concrete1_Mat_normal.png" />
+    <Resource Include="3D Models\Castle\textures\Counting_House_Door_Mat_baseColor.png" />
+    <Resource Include="3D Models\Castle\textures\Counting_House_Door_Mat_normal.png" />
+    <Resource Include="3D Models\Castle\textures\Gothic_Window_Outside_Mat_baseColor.png" />
+    <Resource Include="3D Models\Castle\textures\Gothic_Window_Outside_Mat_normal.png" />
+    <Resource Include="3D Models\Castle\textures\Metal003_1K_Color_Mat_baseColor.png" />
+    <Resource Include="3D Models\Castle\textures\Metal003_1K_Color_Mat_metallicRoughness.png" />
+    <Resource Include="3D Models\Castle\textures\Metal003_1K_Color_Mat_normal.png" />
+    <Resource Include="3D Models\Castle\textures\PavingStones046_1K_Color_Mat_baseColor.png" />
+    <Resource Include="3D Models\Castle\textures\PavingStones046_1K_Color_Mat_metallicRoughness.png" />
+    <Resource Include="3D Models\Castle\textures\PavingStones046_1K_Color_Mat_normal.png" />
+    <Resource Include="3D Models\Castle\textures\rough_plaster_brick_04_diff_1k_Mat_baseColor.png" />
+    <Resource Include="3D Models\Castle\textures\rough_plaster_brick_04_diff_1k_Mat_metallicRoughness.png" />
+    <Resource Include="3D Models\Castle\textures\rough_plaster_brick_04_diff_1k_Mat_normal.png" />
+    <Resource Include="3D Models\Castle\textures\TexturesCom_BrickMedievalBlocks0145_1_seamless_S_Mat_baseColor.png" />
+    <Resource Include="3D Models\Castle\textures\TexturesCom_BrickMedievalBlocks0145_1_seamless_S_Mat_normal.png" />
+    <Resource Include="3D Models\Castle\textures\TexturesCom_ConcreteFence0028_1_seamless_S_Mat_baseColor.png" />
+    <Resource Include="3D Models\Castle\textures\TexturesCom_ConcreteFence0028_1_seamless_S_Mat_normal.png" />
+    <Resource Include="3D Models\Castle\textures\TexturesCom_OrnamentBorder0037_1_seamless_S_Mat_baseColor.png" />
+    <Resource Include="3D Models\Castle\textures\TexturesCom_OrnamentBorder0037_1_seamless_S_Mat_normal.png" />
+    <Resource Include="3D Models\Castle\textures\TexturesCom_OrnamentsShields0055_7_S_Mat_baseColor.png" />
+    <Resource Include="3D Models\Castle\textures\TexturesCom_OrnamentsShields0055_7_S_Mat_normal.png" />
+    <Resource Include="3D Models\Castle\textures\TexturesCom_RooftilesCeramicOld0090_1_seamless_S_Mat_baseColor.png" />
+    <Resource Include="3D Models\Castle\textures\TexturesCom_RooftilesCeramicOld0090_1_seamless_S_Mat_normal.png" />
+    <Resource Include="3D Models\Castle\textures\trim3_Mat_baseColor.png" />
+    <Resource Include="3D Models\Castle\textures\trim3_Mat_normal.png" />
+    <Resource Include="3D Models\Castle\textures\trim4_Mat_baseColor.png" />
+    <Resource Include="3D Models\Castle\textures\trim4_Mat_normal.png" />
+    <Resource Include="3D Models\Castle\textures\Tudor_Window_Mat_baseColor.png" />
+    <Resource Include="3D Models\Castle\textures\Tudor_Window_Mat_normal.png" />
+    <Resource Include="3D Models\Castle\textures\Wood049_1K_Color_Mat_baseColor.png" />
+    <Resource Include="3D Models\Castle\textures\Wood049_1K_Color_Mat_normal.png" />
+    <Resource Include="3D Models\Arrow\arrow_obj_initialShadingGroup_BaseColor.png" />
+    <Resource Include="3D Models\Arrow\arrow_obj_initialShadingGroup_Height.png" />
+    <Resource Include="3D Models\Arrow\arrow_obj_initialShadingGroup_Metallic.png" />
+    <Resource Include="3D Models\Arrow\arrow_obj_initialShadingGroup_Roughness.png" />
+    <Resource Include="3D Models\Arrow\veren.tga.png" />
+    <Resource Include="3D Models\ornate_tomb_door\textures\tombdoor.M500k.T4096_baseColor.jpeg" />
+    <Resource Include="3D Models\ornate_tomb_door\tombdoor.M500k.T4096_baseColor.jpeg" />
+    <Resource Include="3D Models\large_medieval_wall_-_modular\license.txt" />
+    <Resource Include="3D Models\large_medieval_wall_-_modular\textures\wall_large_baseColor.png" />
+    <Resource Include="3D Models\large_medieval_wall_-_modular\textures\wall_large_hide_baseColor.png" />
+    <Resource Include="3D Models\large_medieval_wall_-_modular\textures\wall_large_hide_metallicRoughness.png" />
+    <Resource Include="3D Models\large_medieval_wall_-_modular\textures\wall_large_hide_normal.png" />
+    <Resource Include="3D Models\large_medieval_wall_-_modular\textures\wall_large_metallicRoughness.png" />
+    <Resource Include="3D Models\large_medieval_wall_-_modular\textures\wall_large_normal.png" />
+    <Resource Include="3D Models\large_medieval_wall_-_modular\wall_large_baseColor.png" />
+    <Resource Include="3D Models\large_medieval_wall_-_modular\wall_large_hide_baseColor.png" />
+    <Resource Include="3D Models\large_medieval_wall_-_modular\wall_large_hide_metallicRoughness.png" />
+    <Resource Include="3D Models\large_medieval_wall_-_modular\wall_large_hide_normal.png" />
+    <Resource Include="3D Models\large_medieval_wall_-_modular\wall_large_metallicRoughness.png" />
+    <Resource Include="3D Models\large_medieval_wall_-_modular\wall_large_normal.png" />
+    <Content Include="AssimpLib\Assimp32.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="AssimpLib\Assimp64.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="AssimpLib\AssimpNet.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

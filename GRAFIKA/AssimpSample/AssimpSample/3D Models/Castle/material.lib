@@ -1,0 +1,175 @@
+# Aspose.3D Wavefront OBJ Exporter
+# Copyright 2004-2021 Aspose Pty Ltd.
+# File created: 12/31/2021 14:37:58
+
+newmtl TexturesCom_BrickMedievalBlocks0145_1_seamless_S_Mat
+	Ka 0.2 0.2 0.2
+	Kd 1 1 1
+	d 1
+	Tr 0
+	illum 2
+	Ks 0.2 0.2 0.2
+	Ns 20
+	map_Kd TexturesCom_BrickMedievalBlocks0145_1_seamless_S_Mat_baseColor.png
+newmtl Gothic_Window_Outside_Mat
+	Ka 0.2 0.2 0.2
+	Kd 1 1 1
+	d 1
+	Tr 0
+	illum 2
+	Ks 0.2 0.2 0.2
+	Ns 20
+	map_Kd Gothic_Window_Outside_Mat_baseColor.png
+newmtl concrete1_Mat
+	Ka 0.2 0.2 0.2
+	Kd 1 1 1
+	d 1
+	Tr 0
+	illum 2
+	Ks 0.2 0.2 0.2
+	Ns 20
+	map_Kd concrete1_Mat_baseColor.png
+newmtl Tudor_Window_Mat
+	Ka 0.2 0.2 0.2
+	Kd 1 1 1
+	d 1
+	Tr 0
+	illum 2
+	Ks 0.2 0.2 0.2
+	Ns 20
+	map_Kd Tudor_Window_Mat_baseColor.png
+newmtl rough_plaster_brick_04_diff_1k_Mat
+	Ka 0.2 0.2 0.2
+	Kd 1 1 1
+	d 1
+	Tr 0
+	illum 2
+	Ks 0.2 0.2 0.2
+	Ns 20
+	map_Kd rough_plaster_brick_04_diff_1k_Mat_baseColor.png
+newmtl Counting_House_Door_Mat
+	Ka 0.2 0.2 0.2
+	Kd 1 1 1
+	d 1
+	Tr 0
+	illum 2
+	Ks 0.2 0.2 0.2
+	Ns 20
+	map_Kd Counting_House_Door_Mat_baseColor.png
+newmtl TexturesCom_RooftilesCeramicOld0090_1_seamless_S_Mat
+	Ka 0.2 0.2 0.2
+	Kd 1 1 1
+	d 1
+	Tr 0
+	illum 2
+	Ks 0.2 0.2 0.2
+	Ns 20
+	map_Kd TexturesCom_RooftilesCeramicOld0090_1_seamless_S_Mat_baseColor.png
+newmtl arch1_Mat
+	Ka 0.2 0.2 0.2
+	Kd 1 1 1
+	d 1
+	Tr 0
+	illum 2
+	Ks 0.2 0.2 0.2
+	Ns 20
+	map_Kd arch1_Mat_baseColor.png
+newmtl Arched_Window_Mat
+	Ka 0.2 0.2 0.2
+	Kd 1 1 1
+	d 1
+	Tr 0
+	illum 2
+	Ks 0.2 0.2 0.2
+	Ns 20
+	map_Kd Arched_Window_Mat_baseColor.png
+newmtl TexturesCom_OrnamentsShields0055_7_S_Mat
+	Ka 0.2 0.2 0.2
+	Kd 1 1 1
+	d 1
+	Tr 0
+	illum 2
+	Ks 0.2 0.2 0.2
+	Ns 20
+	map_Kd TexturesCom_OrnamentsShields0055_7_S_Mat_baseColor.png
+newmtl Metal003_1K_Color_Mat
+	Ka 0.2 0.2 0.2
+	Kd 1 1 1
+	d 1
+	Tr 0
+	illum 2
+	Ks 0.2 0.2 0.2
+	Ns 20
+	map_Kd Metal003_1K_Color_Mat_baseColor.png
+newmtl trim3_Mat
+	Ka 0.2 0.2 0.2
+	Kd 1 1 1
+	d 1
+	Tr 0
+	illum 2
+	Ks 0.2 0.2 0.2
+	Ns 20
+	map_Kd trim3_Mat_baseColor.png
+newmtl TexturesCom_OrnamentBorder0037_1_seamless_S_Mat
+	Ka 0.2 0.2 0.2
+	Kd 1 1 1
+	d 1
+	Tr 0
+	illum 2
+	Ks 0.2 0.2 0.2
+	Ns 20
+	map_Kd TexturesCom_OrnamentBorder0037_1_seamless_S_Mat_baseColor.png
+newmtl Concrete036_1K_Color_Mat
+	Ka 0.2 0.2 0.2
+	Kd 1 1 1
+	d 1
+	Tr 0
+	illum 2
+	Ks 0.2 0.2 0.2
+	Ns 20
+	map_Kd Concrete036_1K_Color_Mat_baseColor.png
+newmtl TexturesCom_ConcreteFence0028_1_seamless_S_Mat
+	Ka 0.2 0.2 0.2
+	Kd 1 1 1
+	d 1
+	Tr 0
+	illum 2
+	Ks 0.2 0.2 0.2
+	Ns 20
+	map_Kd TexturesCom_ConcreteFence0028_1_seamless_S_Mat_baseColor.png
+newmtl Chapel_Window_Mat
+	Ka 0.2 0.2 0.2
+	Kd 1 1 1
+	d 1
+	Tr 0
+	illum 2
+	Ks 0.2 0.2 0.2
+	Ns 20
+	map_Kd Chapel_Window_Mat_baseColor.png
+newmtl PavingStones046_1K_Color_Mat
+	Ka 0.2 0.2 0.2
+	Kd 1 1 1
+	d 1
+	Tr 0
+	illum 2
+	Ks 0.2 0.2 0.2
+	Ns 20
+	map_Kd PavingStones046_1K_Color_Mat_baseColor.png
+newmtl trim4_Mat
+	Ka 0.2 0.2 0.2
+	Kd 1 1 1
+	d 1
+	Tr 0
+	illum 2
+	Ks 0.2 0.2 0.2
+	Ns 20
+	map_Kd trim4_Mat_baseColor.png
+newmtl Wood049_1K_Color_Mat
+	Ka 0.2 0.2 0.2
+	Kd 1 1 1
+	d 1
+	Tr 0
+	illum 2
+	Ks 0.2 0.2 0.2
+	Ns 20
+	map_Kd Wood049_1K_Color_Mat_baseColor.png
